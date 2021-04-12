@@ -4,14 +4,15 @@
 时间：2021-4-12
 '''
 import torch
-from main import Net
+from train import Net
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 import os
 from PIL import Image
 
+# 差点翻车，车牌训练的数据集里面没有字母 ‘I’ 和 'O'
 SINGLE_CHAR_LIST = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C',
-                    'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+                    'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P',
                     'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '京', '闽', '粤',
                     '苏', '沪', '浙']
 
