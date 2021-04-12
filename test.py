@@ -60,8 +60,6 @@ model.load_state_dict(torch.load('Model.pth'))
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-
-
 def test():
     correct = 0
     total = 0
