@@ -13,4 +13,4 @@
 1、我的环境是 (win10 64位) + (Python 3.8.3) + (OpenCV 4.5.1) + (Pytorch 1.7.0+cu110)
 2、要跑起来先运行 extract_License_Plate.py 提取出车牌字符，然后运行 resize.py 将提取出的车牌resize到32x40大小，之后运行 train.py
 训练模型，最后运行 test.py 跑出结果
-3、原博客链接
+3、原博客链接https://blog.csdn.net/weixin_41645749/article/details/115652113
