@@ -1,0 +1,16 @@
+文件说明：
+1、single_num 文件夹是用来存放生成的车牌字符图片
+2、Model.pth 是 CNN 生成的模型文件
+3、bmp2jpg.py 是用来将BMP文件转化为JPG文件，这里用不到，我主要是用来批量处理数据集的，因为我搜集到的数据集是BMP格式的，我转化成了JPG格式
+4、extract_License_Plate.py 是用来提取车牌和分割车牌
+5、palat.jpg 是提取出的车牌的二值图
+6、resize.py 是将提取出的车牌resize到32x40大小
+7、test.py 是测试的，查看车牌预测结果
+8、test6.png 这个是我们的原始图
+9、train.py 这个是 CNN 训练模型，生成 Model.pth
+
+使用须知：
+1、我的环境是 (win10 64位) + (Python 3.8.3) + (OpenCV 4.5.1) + (Pytorch 1.7.0+cu110)
+2、要跑起来先运行 extract_License_Plate.py 提取出车牌字符，然后运行 resize.py 将提取出的车牌resize到32x40大小，之后运行 train.py
+训练模型，最后运行 test.py 跑出结果
+3、原博客链接
