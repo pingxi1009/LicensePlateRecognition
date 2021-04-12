@@ -13,4 +13,7 @@
 1、我的环境是 (win10 64位) + (Python 3.8.3) + (OpenCV 4.5.1) + (Pytorch 1.7.0+cu110)
 2、要跑起来先运行 extract_License_Plate.py 提取出车牌字符，然后运行 resize.py 将提取出的车牌resize到32x40大小，之后运行 train.py
 训练模型，最后运行 test.py 跑出结果
-3、原博客链接https://blog.csdn.net/weixin_41645749/article/details/115652113
+3、原博客链接:https://blog.csdn.net/weixin_41645749/article/details/115652113
+
+目前存在的问题：泛化能力一般，最主要是抠车牌和车牌分割的时候如果噪点很多，最后可能不能正确的分割车牌，目前没时间优化这个，如果有比较好的方法
+欢迎联系我沟通交流，一起进步一起成长1009088103@qq.com
